@@ -39,8 +39,9 @@ Welcome to **Dev Buddy**, a fun and interactive virtual assistant that features 
 
 2. Install dependencies:
 
+```bash
 pip install pyttsx3 pygame SpeechRecognition pystray numpy pillow
-
+```
 
 3. Enable the microphone: Make sure your microphone is properly connected and recognized.
 
@@ -60,18 +61,21 @@ Windows
 
 2. Install dependencies: Open a Command Prompt or PowerShell window and run:
 
+```bash
 pip install pyttsx3 pystray pygame SpeechRecognition numpy pillow
-
+```
 
 3. Install PyAudio: PyAudio is required for speech recognition. If you encounter issues installing it, download the corresponding wheel file from PyPI and install it using pip:
 
+```bash
 pip install pyaudio
-
+```
 
 4. Run the script:
 
+```bash
 python dev_buddy_win.py
-
+```
 
 
 Usage
@@ -139,6 +143,7 @@ You can say any of the following commands to interact with Dev Buddy:
 
 Here is the file structure for the Dev Buddy project:
 
+```bash
 DevBuddy/
 │
 ├── dev_buddy_rpi.py      # Raspberry Pi version script
@@ -147,6 +152,7 @@ DevBuddy/
 ├── requirements.txt      # List of Python dependencies
 └── assets/               # Folder for assets (optional)
     └── dev_buddy_logo.png
+```
 
 Note:
 
@@ -154,7 +160,9 @@ The assets/ folder is optional and can contain any images or logos you may want 
 
 requirements.txt contains the required dependencies, and you can use it to install all dependencies in one go by running:
 
+```bash
 pip install -r requirements.txt
+```
 
 
 # Customization
@@ -176,8 +184,10 @@ MOODS = {
 
 You can add new voice commands by expanding the listen_for_commands function. Each new command would correspond to a specific function in your system.
 
+```bash
 if "open code editor" in command:
     open_code_editor()
+```
 
 # Troubleshooting
 
